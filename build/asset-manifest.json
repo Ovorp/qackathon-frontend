@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0e91b1f8.css",
+    "main.js": "/static/js/main.7f0be928.js",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
+    "static/media/downloadPostman.jpg": "/static/media/downloadPostman.9c88ab9749dd7cf1155e.jpg",
+    "static/media/6Auth.jpg": "/static/media/6Auth.3fbbe03a5a3852d0ce9c.jpg",
+    "static/media/8Header.jpg": "/static/media/8Header.448c15e2a9081808256a.jpg",
+    "static/media/2CreateCollection.jpg": "/static/media/2CreateCollection.0e9c9a5ecd062224923b.jpg",
+    "static/media/7AuthKey.jpg": "/static/media/7AuthKey.a1bf2105f51b9ac67e9d.jpg",
+    "static/media/4AddRequest.jpg": "/static/media/4AddRequest.dabe66e76a84b70ac4d0.jpg",
+    "static/media/5InitialApiCall.jpg": "/static/media/5InitialApiCall.58eb012680e72acc8511.jpg",
+    "static/media/3Birds.jpg": "/static/media/3Birds.87d0a6da85058bed8d9e.jpg",
+    "index.html": "/index.html",
+    "main.0e91b1f8.css.map": "/static/css/main.0e91b1f8.css.map",
+    "main.7f0be928.js.map": "/static/js/main.7f0be928.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e91b1f8.css",
+    "static/js/main.7f0be928.js"
+  ]
+}
