@@ -1,10 +1,26 @@
 body {
   background: #ecd9c6;
+  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+
   color: #000000;
   text-align: center;
-  font-family: Papyrus, Times, serif;
-  font-weight: 900;
+font-family: 'Papyrus', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.06em;
 }
+p {
+  padding: 1rem;
+  text-align: left;
+}
+h1 {
+  font-size: 6em;
+}
+
+h2, h3, h4 {
+  font-weight: 900;
+  font-size: 2em;
+}
+
 
 header {
   background-image: url("https://www.inversegamer.com/wp-content/uploads/2022/01/best-minecraft-shaders.png");
@@ -12,17 +28,11 @@ header {
 }
 .heading {
   background-color: #ecd9c6;
+  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+
   border-radius: 25px;
-  padding: 1.5rem;
-  font-family: "Papyrus", Times, serif;
-  font-size: 2em;
-}
-p {
   padding: 1rem;
-  text-align: left;
 }
-
-
 
 
 main {
@@ -44,7 +54,7 @@ img {
 
 .camera {
   font-size: 150px;
-  color: #009933;
+  color: #009879;
   text-shadow: 10px -5px 15px #000000;
   float: left;
   padding-right: 32px;
@@ -55,43 +65,30 @@ ul {
   text-align: left;
 }
 
-#installPostmanSteps {
-  font-size: 1.5em;
-  font-weight: 900;
-}
-
 section {
-  padding: 6rem;
+  padding: 2rem;
   border-radius: 25px;
   background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210501/pngtree-background-with-the-texture-of-burnt-old-parchment-image_699215.jpg");
 }
 
-
-#camera {
-  clip-path: inset(5% 35% 35% 35%);
-  border-radius: 50px;
+.url {
+  color: #009879;
+ font-size: 1.2em;
+ text-decoration: underline;
+ text-align: center;
 }
 
-#leadboard {
-  padding: 10rem;
-  background-color: #009933;
-  font-family: "Papyrus", Times, serif;
-  font-size: 1.5em;
+.clipboard {
+  margin-left: 10px;
+  text-shadow: 4px 4px #000000;
 }
 
-h2 {
-  font-size: 1.5em;
-  font-weight: 900;
-  font-family: "Papyrus", Times, serif;
+footer{
+  padding-top: 1rem;
+  background-color: #313030;
+  color: antiquewhite;
 }
-
-
-h3 {
-  font-weight: 900;
-  font-size: 2em;
-}
-
-footer {
+#profile {
   display: flex;
   justify-content: space-around;
 }
@@ -100,4 +97,63 @@ footer {
   width: 18rem;
   height: 20rem;
   border-radius: 18%;
+}
+
+table {
+  border-collapse: separate;
+  border-radius: 10px;
+  margin: 25px auto;
+  font-size: 1.2em;
+  min-width: 1000px;
+  letter-spacing: .13em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+table th{
+    padding: 12px 15px;  
+
+}
+
+table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: all 1s;
+  padding: 0;
+
+}
+
+.show{
+  transition: all 1s;
+}
+
+button {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  font-size: 70px;
+  float: left;
 }
