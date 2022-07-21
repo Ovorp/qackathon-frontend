@@ -6,8 +6,19 @@ import birds from "./images/3Birds.jpg";
 import addRequest from "./images/4AddRequest.jpg";
 import initialApiCall from "./images/5InitialApiCall.jpg";
 import auth from "./images/6Auth.jpg";
-import authKey from "./images/7AuthKey.jpg";
+// import authKey from "./images/7AuthKey.jpg";
 import headerImg from "./images/8Header.jpg";
+import endpoint from "./images/9Endpoints.jpg";
+import tenGet from "./images/10Get.jpg";
+import POSTnotebookRequest from "./images/12POSTNotebookRequest.png";
+import GETNotebook from "./images/13GETNotebook.png";
+import PUTRequest from "./images/14PUTRequest.png";
+import POSTRequestAnswer from "./images/15POSTRequestAnswer.png";
+import leaderboard from "./images/16leaderboard.png";
+import nathan from "./images/nate.png";
+import bren from "./images/Bren.png";
+import karen from "./images/karen.jpg";
+import tammy from "./images/Tammy.png";
 
 function App() {
   return (
@@ -24,7 +35,8 @@ function App() {
 
       <main>
         <div>
-          <i className="bi bi-camera-fill"></i>
+          {/* <i className='fas fa-camera fa-4x' id="cameraIcon" /> */}
+          <i className="bi bi-camera-fill camera"></i>
           <p>
             You have been hired by the Safari Seekers Group to go on a quest to
             find a rare bird located in the deepest part of the mysterious
@@ -48,8 +60,8 @@ function App() {
 
           {/* <!--Instruction on how to install postman-->  */}
 
-          <div id="installPostman">
-            <p id="installPostmanSteps">
+          <div>
+            <p>
               Here are some steps to get you ready to hunt through the database:
             </p>
 
@@ -57,7 +69,7 @@ function App() {
               You will need to download the postman app from{" "}
               <a href="https://www.postman.com/downloads/">
                 postman.com/downloads
-              </a>
+              </a>{" "}
               to get started.
             </p>
 
@@ -79,7 +91,7 @@ function App() {
           <img src={downloadPostman} alt="download postman" />
           <img src={createCollection} alt="create collection" />
           <img src={birds} alt="birds" />
-          <img src={addRequest} alt='adding a request' />
+          <img src={addRequest} alt="adding a request" />
 
           {/* <!--Instruction on how to create a request in postman-->  */}
 
@@ -92,7 +104,7 @@ function App() {
             luckily for you it is still legible...
           </p>
 
-          <div className="firstGet">
+          <section>
             <p>
               The first step on your journey is to make a GET request. A Get
               request retrieves bits of information from the database.
@@ -105,7 +117,7 @@ function App() {
                 https://quackathon-2022-server.herokuapp.com/start
               </p>
             </p>
-          </div>
+          </section>
           <img src={initialApiCall} alt="api call" />
 
           <p>
@@ -115,7 +127,7 @@ function App() {
 
           <img src={auth} alt="auth" />
 
-          <div id="authorization">
+          <section>
             <p>
               Sometimes GET requests require authorization to access the
               information at a given endpoint. So for your next task you need to
@@ -129,22 +141,164 @@ function App() {
               response.
             </p>
 
-            <p> Now your ready to make your next request.</p>
+            <p> Now you're ready to make your next request.</p>
 
             <p>
-              (Hint: “/birds” is an endpoint that needs authorization for you to
+              Hint: “/birds” is an endpoint that needs authorization for you to
               access information. The birds endpoint is a cheat sheet for all
               the endpoints you can make to the server. Think of it like a menu.
               The URL to use in the GET request is
               <p id="birdGetRequest">
-                https://quackathon-2022-server.herokuapp.com/birds)
+                https://quackathon-2022-server.herokuapp.com/birds
               </p>
             </p>
-          </div>
-          <img src={authKey} alt="auth key" />
+          </section>
+          {/* <img src={authKey} alt="auth key" /> */}
 
           <img src={headerImg} alt="header" />
+          <img src={endpoint} alt="endpoint" />
         </div>
+
+        <section>
+          <h3>Warning</h3>
+          <p>
+            When using a GET request to find information on specific birds by
+            their common name, you must be whitespace sensitive. Hint:
+            “/birds/bodies/:commonName” is an endpoint that is whitespace
+            sensitive. A possible URL to use in the GET request is{" "}
+          </p>
+
+          <p id="birdGetRequest">
+            https://quackathon-2022-server.herokuapp.com/birds/bodies/greater
+            prairie-chicken
+          </p>
+        </section>
+
+        <img src={tenGet} alt="ten get" />
+
+        <section>
+          <h3>On to the next request:</h3>
+          <p>
+            {" "}
+            A POST request adds new information (generally into the database)
+            There is a lot of information to keep track of in the Postman Jungle
+            database. To post important information in your own notebook, you
+            will need to send a POST request with this URL:
+          </p>
+
+          <p id="birdGetRequest">
+            https://quackathon-2022-server.herokuapp.com/notebooks
+          </p>
+
+          <p>
+            You will also need to make sure you have a body with the post to
+            insert your username. Make sure it is unique!
+          </p>
+        </section>
+        <img
+          class="postmanScreenShots"
+          src={POSTnotebookRequest}
+          alt="Post notebook request"
+        />
+
+        <div class="requests">
+          <h3>See whats in your notebook in this next request:</h3>
+          <p>
+            {" "}
+            You can also GET information from your notebook when trying to
+            determine what you know and what information you need in order to
+            uncover the rare bird. Notice that you only see one set of different
+            attributes. Make sure you only fill in information you find on the
+            attributes of the rare bird you are hunting, and not information on
+            other birds in the database. To access your notebook information,
+            you will need to send a GET request with this URL:
+          </p>
+
+          <p class="birdGetRequest">
+            https://quackathon-2022-server.herokuapp.com/notebooks/:notebook_id
+          </p>
+
+          <p>
+            Make sure you end the URL with your specific notebook id number!
+          </p>
+        </div>
+
+        <img class="postmanScreenShots" src={GETNotebook} alt="Get notebook" />
+
+        <div class="requests">
+          <h3>You can update your notebook in this next request:</h3>
+          <p>
+            {" "}
+            A PUT request changes information (generally into the database). As
+            you find new information on the rare bird, you will need to update
+            your notebook. You can also make changes if you posted incorrect
+            information for the hidden bird. To update information in your own
+            notebook you will need to send a PUT request with this URL:{" "}
+          </p>
+
+          <p class="birdGetRequest">
+            https://quackathon-2022-server.herokuapp.com/notebooks
+          </p>
+
+          <p>
+            You will also need to make sure you have a body with the post to
+            insert information on the different attributes. You will need to
+            include your notebook id within the body of the request in order for
+            the new information to be posted to the correct place. If you do not
+            put new info into the notebook the value will remain “null”.
+          </p>
+        </div>
+
+        <img class="postmanScreenShots" src={PUTRequest} alt="Put request" />
+
+        <div class="requests">
+          <h3>Submit the bird name for the win in this next request:</h3>
+          <p>
+            {" "}
+            Now that you have access to the Postman Jungle, you need to hunt
+            through the database to find the scientific name of that rare bird
+            for the Safari Seekers Group. Make sure to fill in your notebook
+            with any information you find on that hidden bird. Once your
+            notebook is full, you will be able to submit the scientific name and
+            win the research grant!
+          </p>
+
+          <p>
+            To submit your answer to the Safari Seekers Group, make a post with
+            the rare bird’s scientific name in the body. You will need to send a
+            POST request with this URL:
+          </p>
+
+          <p class="birdGetRequest">
+            https://quackathon-2022-server.herokuapp.com/answers
+          </p>
+        </div>
+
+        <img
+          class="postmanScreenShots"
+          src={POSTRequestAnswer}
+          alt="Post request answer"
+        />
+
+        <div class="requests">
+          <h3>Add your name to the leaderboard in this next request:</h3>
+          <p>
+            {" "}
+            Don’t forget to post your username and favorite animal to the
+            leaderboard in the body of the request! Make your name as one of the
+            greatest QA hunters ever!! You will need to send a POST request with
+            this URL:
+          </p>
+
+          <p class="birdGetRequest">
+            {" "}
+            https://quackathon-2022-server.herokuapp.com/leaderboard
+          </p>
+
+          <h3>Happy hunting!</h3>
+        </div>
+
+        <img class="postmanScreenShots" src={leaderboard} alt="leaderboard" />
       </main>
 
       <div id="leadboard">
@@ -180,26 +334,19 @@ function App() {
       <footer>
         <div className="profile">
           <p>Nathan Shirts</p>
-          <img
-            class="contributors"
-            src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/41606140_10160742485655065_1573059878425985024_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Oq2L4TKdze8AX92NuJP&_nc_ht=scontent-lax3-2.xx&oh=00_AT--cpdo7Ry5YkLTCvmKijlshuwDYg_NugbnQZzFZYXU5Q&oe=62FF7993"
-            alt="Tammy"
-          />
+          <img className="contributors" id="nate" src={nathan} alt="nathan" />
         </div>
         <div className="profile">
           <p>Bren Mace</p>
+          <img className="contributors" src={bren} alt="bren" />
         </div>
         <div className="profile">
           <p>Karen Holland</p>
+          <img className="contributors" src={karen} alt="karen" />
         </div>
         <div className="profile">
           <p>Tammy Ritchey</p>
-
-          <img
-            class="contributors"
-            src="https://lh3.googleusercontent.com/IIO3Llt0XrnISaAeevTwwveCeUKiW5OQJdLv09d8B54raCkAzGGIRK26IRcqPCECUUVzUoUrLfzmVYIeJaXKULPmJaSm7oOt-Qrk8lFR7XLRT5jWPixYXtX8TT5Rwg3cvkblyJATz2odBk-DmWEgrcEZHEzrE_7jFJquTTxToJwRjpy-uhZrG55p4ym4wwYl34rINyfCapaE6hU_gyLTBfiZg61h3odOsD73scvmfE-iLpNAMhMONARUGewESXNlqw11DU39akSLnCJNBJqZhVJ4podqNKedXJs7XHQDdnGOaoQ3cFWLCOR6oDQeck8pE0wqvAPxyEAFLxqHWqCoVR7vwS_OD0204ra9Pe3vGZzPa2n2Nb4Vr7byr-4E0rN6E0ppecRN89R1yC2d5NSjK47dI3zHi5buDA_S07J6ERYEPU4GMKoof9ABw-Pmu95a4ayP_IuO2ApIXZFZDVWpgTMcOl05zfAHgXb6nx3kBLwgK2_Qi7TNRyhTwTUjcGel4i71f4xIya3Ih0TnDIJM9c6BNIetblnhZ9RHfYf9yFXomCHSsxk1dmV3fUh9NBlP7i8kX_wQGjdUnSEyR-0h2LXlE55f4PtuJdBhPDb4R92SfjL-15cIGNL0d9ijQbyui_94jVPvZ7L8sExSDKuYD6vOb5c7FqDVhajCXerdcqj-7ueCcRQiH3a3jDB_Yy-weTkIEiEKPp7RqY5eRsGSljotmPKvFQ9zSdv5Tl11jWZ_e_FTexIuZVoHJF4=w638-h847-no?authuser=0"
-            alt="Tammy"
-          />
+          <img className="contributors" src={tammy} alt="tammy" />
         </div>
       </footer>
     </div>

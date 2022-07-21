@@ -19,17 +19,22 @@ header {
 }
 p {
   padding: 1rem;
+  text-align: left;
 }
 
 
 
 
 main {
-  padding-top: 3em;
-  padding-bottom: 5em;
+ margin:auto;
+ padding-top: 1.5rem;
   font-size: 1.5em;
-  text-align: left;
+  text-align: center;
+  justify-content: center;
+  width: 80rem;
 }
+
+
 img {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -37,16 +42,17 @@ img {
   height: 50rem;
 }
 
-#cameraIcon {
-  padding-right: 2rem;
-  padding-botton: 50rem;
+.camera {
+  font-size: 150px;
   color: #009933;
   text-shadow: 10px -5px 15px #000000;
+  float: left;
+  padding-right: 32px;
+  padding-bottom: -20px;
 }
 
-
-#installPostman {
-  padding-top: 1.5rem;
+ul {
+  text-align: left;
 }
 
 #installPostmanSteps {
@@ -54,31 +60,12 @@ img {
   font-weight: 900;
 }
 
-.firstGet {
+section {
   padding: 6rem;
   border-radius: 25px;
   background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210501/pngtree-background-with-the-texture-of-burnt-old-parchment-image_699215.jpg");
 }
 
-#startGetRequestAccess {
-  text-align: center;
-  font-weight: 900;
-  color: #009933;
-  font-size: 1.2em;
-}
-
-#authorization {
-  padding: 5rem;
-  border-radius: 25px;
-  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210501/pngtree-background-with-the-texture-of-burnt-old-parchment-image_699215.jpg");
-}
-
-#birdGetRequest {
-  text-align: center;
-  font-weight: 900;
-  color: #009933;
-  font-size: 1.2em;
-}
 
 #camera {
   clip-path: inset(5% 35% 35% 35%);
@@ -98,28 +85,19 @@ h2 {
   font-family: "Papyrus", Times, serif;
 }
 
-#footer {
-  padding: 5rem;
-  font-family: "Papyrus", Times, serif;
-}
-
-#contributors {
-  padding: 1.5em;
-  font-weight: 900;
-}
 
 h3 {
   font-weight: 900;
   font-size: 2em;
 }
 
-#names {
-  font-weight: 900;
-  font-size: 1.5em;
+footer {
+  display: flex;
+  justify-content: space-around;
 }
 
 .contributors {
-  width: 15rem;
+  width: 18rem;
   height: 20rem;
-  border-radius: 8px;
+  border-radius: 18%;
 }
