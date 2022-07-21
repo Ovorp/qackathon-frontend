@@ -4,12 +4,12 @@ body {
 
   color: #000000;
   text-align: center;
-font-family: 'Papyrus', sans-serif;
+  font-family: "Papyrus", sans-serif;
   font-weight: 600;
   letter-spacing: 0.06em;
 }
 b {
-  color: #F47174;
+  color: #f47174;
   font-weight: 900;
   font-size: 1.5em;
 }
@@ -25,11 +25,12 @@ h1 {
   font-size: 6em;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   font-weight: 900;
   font-size: 2em;
 }
-
 
 header {
   background-image: url("https://www.inversegamer.com/wp-content/uploads/2022/01/best-minecraft-shaders.png");
@@ -43,16 +44,14 @@ header {
   padding: 1rem;
 }
 
-
 main {
- margin:auto;
- padding-top: 1.5rem;
+  margin: auto;
+  padding-top: 1.5rem;
   font-size: 1.5em;
   text-align: center;
   justify-content: center;
   width: 80rem;
 }
-
 
 img {
   padding-top: 1em;
@@ -82,9 +81,9 @@ section {
 
 .url {
   color: #009879;
- font-size: 1.2em;
- text-decoration: underline;
- text-align: center;
+  font-size: 1.2em;
+  text-decoration: underline;
+  text-align: center;
 }
 
 .clipboard {
@@ -93,10 +92,9 @@ section {
 }
 .clipboard:hover {
   text-shadow: 2px 2px 8px #000000;
-
 }
 
-footer{
+footer {
   padding-top: 1rem;
   background-color: #313030;
   color: antiquewhite;
@@ -118,7 +116,7 @@ table {
   margin: 25px auto;
   font-size: 1.2em;
   min-width: 1000px;
-  letter-spacing: .13em;
+  letter-spacing: 0.13em;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -128,9 +126,8 @@ table thead tr {
   text-align: left;
 }
 
-table th{
-    padding: 12px 15px;  
-
+table th {
+  padding: 12px 15px;
 }
 
 table tbody tr {
@@ -152,21 +149,20 @@ table tbody tr:last-of-type {
   height: 0;
   transition: all 1s;
   padding: 0;
-
 }
 
-.show{
+.show {
   transition: all 1s;
 }
 
 button {
   background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
   font-size: 70px;
   float: left;
 }
