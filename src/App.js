@@ -191,9 +191,9 @@ function App() {
 
           <p>
             You will need to find the scientific name of this rare bird in order
-            to get a research grant to help save this member of the Anatidae
-            family. All you know is the bird is about 20 inches tall and is
-            nonmigratory.
+            to get a research grant to help save this member of the <b><i>Anatidae </i></b>
+            family. All you know is the bird is about <b>20 inches tall</b> and is
+            <b> nonmigratory</b>.
           </p>
 
           <p>
@@ -276,7 +276,7 @@ function App() {
             </p>
             <p className="url">
               https://quackathon-2022-server.herokuapp.com/start
-              <i className="bi bi-clipboard2-fill clipboard"></i>
+              <i className="bi bi-clipboard2-fill clipboard" onClick={() =>  navigator.clipboard.writeText('https://quackathon-2022-server.herokuapp.com/start')}></i>
             </p>
           </section>
           <button onClick={() => hideImg(4)}>
@@ -286,7 +286,7 @@ function App() {
 
           <p>
             After you send your first GET request you realize that the response
-            you got back shows an "authorization" value.
+            you got back shows an "Authorization" value.
           </p>
           <button onClick={() => hideImg(5)}>
             {style5 === "hide" ? ">" : "v"}
@@ -295,7 +295,7 @@ function App() {
 
           <section>
             <p>
-              Sometimes GET requests require authorization to access the
+              Sometimes GET requests require Authorization to access the
               information at a given endpoint. So for your next task you need to
               add the authoriztaion value that you received in the response you
               got back from the start request you made previously.
@@ -317,32 +317,31 @@ function App() {
             </p>
             <p className="url">
               https://quackathon-2022-server.herokuapp.com/birds
-              <i className="bi bi-clipboard2-fill clipboard"></i>
+              <i className="bi bi-clipboard2-fill clipboard" onClick={() =>  navigator.clipboard.writeText('https://quackathon-2022-server.herokuapp.com/birds')}></i>
             </p>
           </section>
           <button onClick={() => hideImg(6)}>
             {style6 === "hide" ? ">" : "v"}
           </button>
-          <img className={style7} src={headerImg} alt="header" />
+          <img className={style6} src={headerImg} alt="header" />
           <button onClick={() => hideImg(7)}>
             {style7 === "hide" ? ">" : "v"}
           </button>
-          <img className={style8} src={endpoint} alt="endpoint" />
+          <img className={style7} src={endpoint} alt="endpoint" />
         </div>
 
         <section>
           <h3>Warning</h3>
           <p>
             When using a GET request to find information on specific birds by
-            their common name, you must be whitespace sensitive. Hint:
+            their common name, the request is whitespace sensitive. Hint:
             “/birds/bodies/:commonName” is an endpoint that is whitespace
             sensitive. A possible URL to use in the GET request is{" "}
           </p>
 
           <p className="url">
-            https://quackathon-2022-server.herokuapp.com/birds/bodies/greater
-            prairie-chicken
-            <i className="bi bi-clipboard2-fill clipboard"></i>
+            https://quackathon-2022-server.herokuapp.com/birds/bodies/greater prairie-chicken
+            <i className="bi bi-clipboard2-fill clipboard" onClick={() =>  navigator.clipboard.writeText('https://quackathon-2022-server.herokuapp.com/birds/bodies/greater prairie-chicken')}></i>
           </p>
         </section>
         <button onClick={() => hideImg(8)}>
@@ -362,12 +361,13 @@ function App() {
 
           <p className="url">
             https://quackathon-2022-server.herokuapp.com/notebooks
-            <i className="bi bi-clipboard2-fill clipboard"></i>
+            <i className="bi bi-clipboard2-fill clipboard" onClick={() =>  navigator.clipboard.writeText('https://quackathon-2022-server.herokuapp.com/notebooks')}></i>
           </p>
 
           <p>
-            You will also need to make sure you have a body with the post to
-            insert your username. Make sure it is unique!
+            You will also need to make sure to send a JSON body with the POST request. A JSON is made up of key-value pairs, each pair consists of a key and a value separated by a colon (:). Make sure you body has a key labeld "username" and a unique value!
+
+            For more information vist this <a href='https://www.w3schools.com/js/js_json_objects.asp'>link</a>!
           </p>
         </section>
         <button onClick={() => hideImg(9)}>
@@ -385,20 +385,17 @@ function App() {
             {" "}
             You can also GET information from your notebook when trying to
             determine what you know and what information you need in order to
-            uncover the rare bird. Notice that you only see one set of different
-            attributes. Make sure you only fill in information you find on the
-            attributes of the rare bird you are hunting, and not information on
-            other birds in the database. To access your notebook information,
+            uncover the rare bird. To access your notebook information,
             you will need to send a GET request with this URL:
           </p>
 
           <p className="url">
             https://quackathon-2022-server.herokuapp.com/notebooks/:notebook_id
-            <i className="bi bi-clipboard2-fill clipboard"></i>
+            <i className="bi bi-clipboard2-fill clipboard" onClick={() =>  navigator.clipboard.writeText('https://quackathon-2022-server.herokuapp.com/notebooks/:notebook_id')}></i>
           </p>
 
           <p>
-            Make sure you end the URL with your specific notebook id number!
+            Make sure you end the URL with your specific notebook id number from the request above!
           </p>
         </section>
         <button onClick={() => hideImg(10)}>
@@ -410,25 +407,29 @@ function App() {
           <h3>You can update your notebook in this next request:</h3>
           <p>
             {" "}
-            A PUT request changes information (generally into the database). As
+            A PUT request updates information (generally into the database). As
             you find new information on the rare bird, you will need to update
-            your notebook. You can also make changes if you posted incorrect
+            your notebook. Make sure you only fill in information you find on the
+            attributes of the rare bird you are hunting, and not information on
+            other birds in the database. You can also make changes if you posted incorrect
             information for the hidden bird. To update information in your own
             notebook you will need to send a PUT request with this URL:
           </p>
 
           <p className="url">
-            https://quackathon-2022-server.herokuapp.com/notebooks
-            <i className="bi bi-clipboard2-fill clipboard"></i>
+          https://quackathon-2022-server.herokuapp.com/notebooks
+            <i className="bi bi-clipboard2-fill clipboard" onClick={() =>  navigator.clipboard.writeText('https://quackathon-2022-server.herokuapp.com/notebooks')}></i>
           </p>
 
           <p>
-            You will also need to make sure you have a body with the post to
-            insert information on the different attributes. You will need to
-            include your notebook id within the body of the request in order for
-            the new information to be posted to the correct place. If you do not
-            put new info into the notebook the value will remain “null”.
+            You will also need to send a JSON body with the PUT request to
+            update information on the different attributes (see the notebook GET request response to see how to format the JSON body. You CAN NOT update "username" or "notebook_id"). You will need to
+            include your "notebook_id" within the body of the request in order for
+            the new information to update the correct notebook. Your JSON does not need to include every attribute, any attribute missing from the JSON body will remain unchanged (the default value is null).
           </p>
+
+          <h3>Happy Hunting!</h3>
+
         </section>
         <button onClick={() => hideImg(11)}>
           {style11 === "hide" ? ">" : "v"}
@@ -447,14 +448,13 @@ function App() {
           </p>
 
           <p>
-            To submit your answer to the Safari Seekers Group, make a post with
-            the rare bird’s scientific name in the body. You will need to send a
-            POST request with this URL:
+            To submit your answer to the Safari Seekers Group, make a POST request with
+            the rare bird’s scientific name in the JSON body (Key "answer"). You will need the URL below
           </p>
 
           <p className="url">
             https://quackathon-2022-server.herokuapp.com/answers
-            <i className="bi bi-clipboard2-fill clipboard"></i>
+            <i className="bi bi-clipboard2-fill clipboard" onClick={() =>  navigator.clipboard.writeText('https://quackathon-2022-server.herokuapp.com/answers')}></i>
           </p>
         </section>
         <button onClick={() => hideImg(12)}>
@@ -467,20 +467,16 @@ function App() {
         />
 
         <section>
-          <h3>Add your name to the leaderboard in this next request:</h3>
+          <h3>Add your name to the Hall of Hunters:</h3>
           <p>
-            Don’t forget to post your username and favorite animal to the
-            leaderboard in the body of the request! Make your name as one of the
-            greatest QA hunters ever!! You will need to send a POST request with
-            this URL:
+            Don’t forget to add you name to the Hall of Hunters. Send a POST request to the URL below with a JSON body that contains your "username" and favorite animal ("animal")! Make your name known as one of the
+            greatest QA hunters ever!! 
           </p>
 
           <p className="url">
             https://quackathon-2022-server.herokuapp.com/leaderboard
-            <i className="bi bi-clipboard2-fill clipboard"></i>
+            <i className="bi bi-clipboard2-fill clipboard" onClick={() =>  navigator.clipboard.writeText('https://quackathon-2022-server.herokuapp.com/leaderboard')}></i>
           </p>
-
-          <h3>Happy hunting!</h3>
         </section>
         <button onClick={() => hideImg(13)}>
           {style13 === "hide" ? ">" : "v"}
@@ -489,7 +485,7 @@ function App() {
       </main>
 
       <div>
-        <h3>Leaderboard</h3>
+        <h1>Hall of Hunters</h1>
         <table>
           <thead>
             <tr>
