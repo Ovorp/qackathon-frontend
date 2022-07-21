@@ -209,7 +209,7 @@ function App() {
           </p>
 
           <p>
-            Here are some steps to get you ready to hunt through the database:
+            Here are some steps to get you ready to hunt through the database.
           </p>
 
           <p>
@@ -223,19 +223,26 @@ function App() {
           <ul>
             <li>
               Install postman on your computer. Skip the prompt that ask you to
-              create an account.
+              create an account.         
+          <img
+            className={style0}
+            src={downloadPostman}
+            alt="download postman"
+          />
             </li>
-            <li>Do not create an account</li>
+            <li>Do not create an account.</li>
             <li>
-              Open your Postman app and select collections on the left panel
+              Open your Postman app and select collections on the left panel.
             </li>
-            <li>Create a new collection (you can name it whatever you want)</li>
-            <li>Create a new request</li>
+            <li>Create a new collection (you can name it whatever you want).</li>
+            <li>Create a new request.</li>
           </ul>
+          
 
           <button onClick={() => hideImg(0)}>
             {style0 === "hide" ? ">" : "v"}
-          </button>
+          </button> 
+          
           <img
             className={style0}
             src={downloadPostman}
@@ -261,7 +268,7 @@ function App() {
 
           <p>
             You realized you don’t know much about the Postman app. Fortunately,
-            you found a notbook with steps to access the Postman Jungle database
+            you found a notebook with steps to access the Postman Jungle database
             that you had to pry from the hands of a dead anthropologist who, you
             found out later, had gotten too close to an alligator wrestling with
             an electric eel. The edges were a little singed and muddy, but
@@ -270,7 +277,7 @@ function App() {
 
           <section>
             <p>
-              The first step on your journey is to make a GET request. A Get
+              The first step on your journey is to make a GET request. A GET
               request retrieves bits of information from the database.
             </p>
 
@@ -308,13 +315,13 @@ function App() {
             <p>
               Sometimes GET requests require Authorization to access the
               information at a given endpoint. So for your next task you need to
-              add the authoriztaion value that you received in the response you
+              add the Authorization value that you received in the response you
               got back from the start request you made previously.
             </p>
             <p>
               First change the Authorization type in the Authorization tab to
-              "no Auth". Then in the "Headers" tab add a Key /value pair. - Key
-              = authorization and the Value = the value you received in the
+              "no Auth." Then in the "Headers" tab add a Key /value pair. Key
+              = Authorization and the Value = the value you received in the
               response.
             </p>
 
@@ -379,7 +386,7 @@ function App() {
           <h3>On to the next request:</h3>
           <p>
             {" "}
-            A POST request adds new information (generally into the database)
+            A POST request adds new information (generally into the database).
             There is a lot of information to keep track of in the Postman Jungle
             database. To post important information in your own notebook, you
             will need to send a POST request with this URL:
@@ -400,10 +407,10 @@ function App() {
           <p>
             You will also need to make sure to send a JSON body with the POST
             request. A JSON is made up of key-value pairs, each pair consists of
-            a key and a value separated by a colon (:). Make sure you body has a
-            key labeld "username" and a unique value! For more information vist
+            a key and a value separated by a colon (:). Make sure your JSON body has a
+            key labeled "username" and a unique value! For more information vist
             this{" "}
-            <a href="https://www.w3schools.com/js/js_json_objects.asp">link</a>!
+            <a href="https://www.w3schools.com/js/js_json_objects.asp" target="_blank" rel="noopener noreferrer">link</a>!
           </p>
         </section>
         <button onClick={() => hideImg(9)}>
@@ -416,7 +423,7 @@ function App() {
         />
 
         <section>
-          <h3>See whats in your notebook in this next request:</h3>
+          <h3>See what is in your notebook in this next request:</h3>
           <p>
             {" "}
             You can also GET information from your notebook when trying to
