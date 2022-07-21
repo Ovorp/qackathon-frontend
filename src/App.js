@@ -224,11 +224,6 @@ function App() {
             <li>
               Install postman on your computer. Skip the prompt that ask you to
               create an account.         
-          <img
-            className={style0}
-            src={downloadPostman}
-            alt="download postman"
-          />
             </li>
             <li>Do not create an account.</li>
             <li>
@@ -240,9 +235,9 @@ function App() {
           
 
           <button onClick={() => hideImg(0)}>
-            {style0 === "hide" ? ">" : "v"}
+            {style0 === "hide" ? "> Hint" : "v"}
           </button> 
-          
+  
           <img
             className={style0}
             src={downloadPostman}
@@ -250,7 +245,7 @@ function App() {
           />
 
           <button onClick={() => hideImg(1)}>
-            {style1 === "hide" ? ">" : "v"}
+            {style1 === "hide" ? "> Hint" : "v"}
           </button>
           <img
             className={style1}
@@ -258,11 +253,11 @@ function App() {
             alt="create collection"
           />
           <button onClick={() => hideImg(2)}>
-            {style2 === "hide" ? ">" : "v"}
+            {style2 === "hide" ? "> Hint" : "v"}
           </button>
           <img className={style2} src={birds} alt="birds" />
           <button onClick={() => hideImg(3)}>
-            {style3 === "hide" ? ">" : "v"}
+            {style3 === "hide" ? "> Hint" : "v"}
           </button>
           <img className={style3} src={addRequest} alt="adding a request" />
 
@@ -298,7 +293,7 @@ function App() {
             </p>
           </section>
           <button onClick={() => hideImg(4)}>
-            {style4 === "hide" ? ">" : "v"}
+            {style4 === "hide" ? "> Hint" : "v"}
           </button>
           <img className={style4} src={initialApiCall} alt="api call" />
 
@@ -307,7 +302,7 @@ function App() {
             you got back shows an "Authorization" value.
           </p>
           <button onClick={() => hideImg(5)}>
-            {style5 === "hide" ? ">" : "v"}
+            {style5 === "hide" ? "> Hint" : "v"}
           </button>
           <img className={style5} src={auth} alt="auth" />
 
@@ -346,11 +341,11 @@ function App() {
             </p>
           </section>
           <button onClick={() => hideImg(6)}>
-            {style6 === "hide" ? ">" : "v"}
+            {style6 === "hide" ? "> Hint" : "v"}
           </button>
           <img className={style6} src={headerImg} alt="header" />
           <button onClick={() => hideImg(7)}>
-            {style7 === "hide" ? ">" : "v"}
+            {style7 === "hide" ? "> Hint" : "v"}
           </button>
           <img className={style7} src={endpoint} alt="endpoint" />
         </div>
@@ -378,7 +373,7 @@ function App() {
           </p>
         </section>
         <button onClick={() => hideImg(8)}>
-          {style8 === "hide" ? ">" : "v"}
+          {style8 === "hide" ? "> Hint" : "v"}
         </button>
         <img className={style8} src={tenGet} alt="ten get" />
 
@@ -408,13 +403,13 @@ function App() {
             You will also need to make sure to send a JSON body with the POST
             request. A JSON is made up of key-value pairs, each pair consists of
             a key and a value separated by a colon (:). Make sure your JSON body has a
-            key labeled "username" and a unique value! For more information vist
+            key labeled "username" and a unique value! For more information visit
             this{" "}
             <a href="https://www.w3schools.com/js/js_json_objects.asp" target="_blank" rel="noopener noreferrer">link</a>!
           </p>
         </section>
         <button onClick={() => hideImg(9)}>
-          {style9 === "hide" ? ">" : "v"}
+          {style9 === "hide" ? "> Hint" : "v"}
         </button>
         <img
           className={style9}
@@ -445,12 +440,12 @@ function App() {
           </p>
 
           <p>
-            Make sure you end the URL with your specific notebook id number from
+            Make sure you end the URL with your specific notebook_id number from
             the request above!
           </p>
         </section>
         <button onClick={() => hideImg(10)}>
-          {style10 === "hide" ? ">" : "v"}
+          {style10 === "hide" ? "> Hint" : "v"}
         </button>
         <img className={style10} src={GETNotebook} alt="Get notebook" />
 
@@ -483,8 +478,8 @@ function App() {
           <p>
             You will also need to send a JSON body with the PUT request to
             update information on the different attributes (see the notebook GET
-            request response to see how to format the JSON body. You CAN NOT
-            update "username" or "notebook_id"). You will need to include your
+            request response to see how to format the JSON body). You CAN NOT
+            update "username" or "notebook_id". You will need to include your
             "notebook_id" within the body of the request in order for the new
             information to update the correct notebook. Your JSON does not need
             to include every attribute, any attribute missing from the JSON body
@@ -492,7 +487,7 @@ function App() {
           </p>
         </section>
         <button onClick={() => hideImg(11)}>
-          {style11 === "hide" ? ">" : "v"}
+          {style11 === "hide" ? "> Hint" : "v"}
         </button>
         <img className={style11} src={PUTRequest} alt="Put request" />
 
@@ -526,7 +521,7 @@ function App() {
           </p>
         </section>
         <button onClick={() => hideImg(12)}>
-          {style12 === "hide" ? ">" : "v"}
+          {style12 === "hide" ? "> Hint" : "v"}
         </button>
         <img
           className={style12}
@@ -537,7 +532,7 @@ function App() {
         <section>
           <h3>Add your name to the Hall of Hunters:</h3>
           <p>
-            Don’t forget to add you name to the Hall of Hunters. Send a POST
+            Don’t forget to add your name to the Hall of Hunters. Send a POST
             request to the URL below with a JSON body that contains your
             "username" and favorite animal ("animal")! Make your name known as
             one of the greatest QA hunters ever!!
@@ -556,7 +551,7 @@ function App() {
           </p>
         </section>
         <button onClick={() => hideImg(13)}>
-          {style13 === "hide" ? ">" : "v"}
+          {style13 === "hide" ? "> Hint" : "v"}
         </button>
         <img className={style13} src={leaderboard} alt="leaderboard" />
       </main>
